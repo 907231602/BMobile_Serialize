@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	<property>
+		<name>phone_flow</name>
+		<value>insert into mobile_phone_flow values(?,?,?,?,?) ON DUPLICATE KEY UPDATE phoneupflow=?,phonedownflow=?,phonetotalflow=?</value>
+	</property>
+
+	 <property>
+		<name>flow_Num</name>
+		<value>insert into mobile_phonenum values(?,?,?,?) ON DUPLICATE KEY UPDATE count=?</value>
+	</property>
+	<property>
+		<name>flow_pv</name>
+		<value>insert into mobile_phonepv values(?,?,?) ON DUPLICATE KEY UPDATE count=?</value>
+	</property>
+
+	<!--<property>
+		<name>driver</name>
+		<value>com.mysql.jdbc.Driver</value>
+	</property> -->
+
+</configuration>
